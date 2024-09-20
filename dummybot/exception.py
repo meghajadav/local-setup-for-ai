@@ -10,4 +10,4 @@ class customexception(Exception):
 
     def __str__(self):
         return "Error occured in python script name [{0}] line number [{1}] error message [{2}]".format(
-            self.lineno
+            self.filename, self.lineno, self.error_message)
